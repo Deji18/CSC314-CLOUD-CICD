@@ -1,70 +1,257 @@
-* {
+*{
     border: none;
     margin: 0%;
     padding: 0%;
     font-family: sans-serif;
-  }
-  
-  header {
-    background-color: #f2f2f2; /* Light grey background */
+}
+
+header {
+    background-color: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-  }
-  
-  img {
+}
+
+img {
     height: 70px;
     width: 70px;
-  }
-  
-  .navsign {
+}
+
+.navsign{
     display: flex;
     align-items: center;
     gap: 100px;
-  }
-  
-  .nav {
+}
+
+.nav{
     display: flex;
-  }
-  
-  nav a {
-    color: #000000; /* Black text */
+}
+
+nav a {
+    color: #000000;
     font-weight: bold;
     padding: 10px;
     text-decoration: none;
-  }
-  
-  nav a:hover {
-    color: white; /* White hover color */
-  }
-  
-  button {
+}
+
+nav a:hover{
+    color: darkgray;
+}
+
+button {
     cursor: pointer;
-    border: 2px solid #000000; /* Squared black border */
+    border-radius: 20px;
     font-weight: bold;
     padding: 10px 15px;
     background-color: darkgray;
     color: #ffffff;
-    transition: background-color 0.3s ease; /* Added transition for hover effect */
-  }
-  
-  button:hover {
-    background-color: #cccccc; /* Changed hover background color */
-  }
-  
-  .body {
+}
+
+button:hover {
+    color: #ffffff;
+    background-color: darkgray;
+}
+
+.body {
     background-image: url("/Csclab-pic.jpg");
     background-size: cover;
-    min-width: 600px; /* Minimum width of 600px */
+    min-width: 700px;
     padding: 30px 20px;
-    color: #000000; /* Black text */
+    color: #ffffff;
     display: block;
     text-align: center;
     margin: auto;
     justify-content: center;
     height: 90vh;
-  }
-  
-  /* Rest of the code remains the same... */
-  
+}
+
+.btn-sign {
+    cursor: pointer;
+    font-size: 20px;
+    height: 45px;
+    width: 120px;
+    border-radius: 20px;
+    font-weight: bold;
+    padding: 10px 15px;
+    background-color: #4a5c6a;
+    color: #ffffff;
+    margin: 35px;   
+}
+
+.btn-sign:hover {
+    background-color: darkgray;
+}
+
+#nacos {
+    display: block;
+    padding: 10px;
+    border-radius: 200px;
+    margin: auto;
+    justify-content: center;
+}
+
+p {
+    padding: 20px 50px;
+    min-width: 200px;
+    font-weight: bold;
+}
+
+h1{
+    padding: 20px;
+    font-size: 50px;
+}
+
+span {
+    display: block;
+    margin-bottom: 40px;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+}
+
+header div h1:last-child {
+    display: block;
+    font-size: 20px;
+    color: #11212d;
+    padding-left: 5px;
+}
+
+.pay{
+    background-color: #4a5c6a;
+    color: #ffffff;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    padding: 30px;
+    min-width: 700px;
+}
+
+.pay div h1{
+    padding-top: 50px;
+    font-size: 40px;
+    color: #11212d;
+}
+
+.payments{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+.pay div div p{
+    font-weight: lighter;
+    font-size: 25px;
+    padding: 40px 30px;
+}
+
+.dropdown {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    width: 450px;
+    margin: auto;
+    text-align: center;
+}
+
+.finish{
+    display: flex;
+    width: 100px;
+    margin: auto;
+    justify-content: center;
+    background-color: #11212d;
+    font-size: 15px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+select{
+    border-radius: 30px;
+    margin: 30px;
+    border: none;
+    padding: 15px;
+    outline: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+option {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+section div div a{
+    text-decoration: none;
+}
+
+.footer{
+    color: #ffffff;
+    background-color: #11212d;
+    min-width: 700px;
+}
+
+.numbers .address .social-media{
+    padding: 30px;
+}
+
+.foothead, h4 {
+    margin-bottom: 15px;
+}
+
+.foothead {
+    color: darkgray;
+}
+
+.foot {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.numbers p, .address p, .social-media p {
+    padding: 6px 0px;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: lighter;
+}
+
+.numbers p a {
+    color: #ffffff;
+}
+
+.ab-head{
+    padding: 25px;
+    background-color: #11212d;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+.ab-head h2 {
+    font-size: 45px;
+}
+.ab-body{
+    background-color: lightgray;
+    font-size: 20px;
+    margin: auto;
+    justify-content: center;
+    align-content: center;
+    height: 80vh;
+    padding: 10px;
+    overflow: auto;
+}
+
+.ab-body p {
+    max-width: 1000px;
+    min-width: 50%;
+    max-height: 70vh;
+    text-align: center;
+    margin: auto;
+    color: #11212d;
+    line-height: 2rem;
+}
