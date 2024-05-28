@@ -2,7 +2,7 @@
     border: none;
     margin: 0%;
     padding: 0%;
-    font-family: sans-serif;
+    font-family:'Times New Roman', Times, serif;
 }
 
 header {
@@ -120,8 +120,8 @@ header div h1:last-child {
 }
 
 .pay{
-    background-color: #4a5c6a;
-    color: #ffffff;
+    background-color: #36a376;
+    color: #725d5d;
     text-align: center;
     margin: auto;
     justify-content: center;
