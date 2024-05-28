@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="pay.css">  
+</head>
+<body>
+    <section class="main">
+        <div class="mainDiv">
+            <p class="header">Payment Details</p>
+            <div class="usernameDiv">
+                <input type="text" id="firstname" class="username" placeholder="Enter Firstname">
+            </div>
+
+            <div class="usernameDiv">
+                <input type="text" id="lastname" class="username" placeholder="Enter Lastname">
+            </div>
+
+            <div class="usernameDiv">
+                <input type="text" id="mtric-number" class="username" placeholder="Enter Matric Number">
+            </div>
+
+            <div class="usernameDiv">
+                <select name="nacos-dues" id="card-type" >
+                    <option value=""> Select Card Type</option>
+                    <option value="1">MasterCard</option>
+                    <option value="2">Visa</option>
+                    <option value="3">Verve</option>
+                </select>
+            </div>
+
+            <div class="payDiv">
+                <input type="tel" id="pay" placeholder="Enter Card Number">
+            </div>
+
+            <div class="usernameDiv" id="last">
+                <input type="tel" inputmode="numeric" id="cvv" class="username" pattern="[1-9]{10,15}" placeholder="Enter CVV Code">
+                <input type="text" id="exp" class="username" placeholder="Expiry Date" onfocus="(this.type='date')" onblur="(this.type='text')" value="Expiry Date">
+            </div>
+            
+            <div class="loginbtn">
+                <a href="final.html"><input type="submit" id="button" value="Finish"></a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

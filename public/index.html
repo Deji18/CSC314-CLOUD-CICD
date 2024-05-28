@@ -1,164 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Student Dues Payment</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f2f2f2;
-      }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="styles.css">
+    <title>NACOS Dues</title>
+</head>
+<body>
+    <section class="header">
+        <header>
+            <div class="logo">
+                <img src="/images (2)~2.png" alt="Vuna Logo">
+                <h1>Veritas University Abuja</h1>
+            </div>
+            
+            <div class="navsign">
+                <div  class="nav">
+                    <nav><a href="#Home">Home</a></nav>
+                    <nav><a href="#Contact-Info">Contact</a></nav>
+                    <nav><a href="/about-us.html">About Us</a></nav>
+                    <nav><a href="#payments">Payments</a></nav>
+                </div>
+                <div class="signIn">
+                    <a href="signIn.html"><button>Sign In</button></a>
+                </div>
+            </div>
+        </header>
+    </section>
 
-      header {
-        background-color: #3ea6ad;
-        color: #fff;
-        padding: 20px;
-        border-bottom-left-radius: 5%;
-        border-bottom-right-radius: 5%;
-        text-align: center;
-      }
+    <section class="body" id="Home">
+        <div id="Hom">
+            <div id="nacos-logo">
+                <img src="/Nacos-logo.png" alt="Nacos-logo" id="nacos">
+            </div>
+            <div> 
+                <span>
+                    <h1>WELCOME TO NACOS</h1>
+                    <h2>(Nigerian Association of Computing Students)</h2>
+                </span>
+                <div>
+                    <p>Nigeria Association of Computing Students (NACOS) is the umbrella body for students studying Computer Science, Computer Engineering, Information Systems, Cyber Security, Software Engineering, Telecommunications Engineering, and all IT-related courses in Nigeria and have been in existence for over two decades and NACOS can boast of its presence in almost all tertiary institutions in Nigeria (including privately owned ones).</p>
+                    <a href="signIn.html"><button class="btn-sign">Sign In</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      .wrapper {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-      }
+    <section class="pay" id="payments">
+        <div class="payments">
+            <div>
+                <h1>NACOS Dues Payment</h1>
+                <p>Payment is strictly for NACOS departmental events <br>and payment records will be properly documented <br>by NACOS officials</p>
+                <p>Select a payment plan based on your Level</p>
+            </div>
+            <div class="dropdown">
+                <label for="nacos-dues">Choose Payment Plan</label>
+                <select name="nacos-dues" id="nacos-dues" >
+                    <option value=""> Select A Payment Plan</option>
+                    <option value="1">100 Level - N1,000</option>
+                    <option value="2">200 Level - N2,000</option>
+                    <option value="3">300 Level - N3,000</option>
+                    <option value="4">400 Level - N4,000</option>
+                </select>
+                <a href="/pay.html"><button class="finish">Finish</button></a>
+            </div>
+        </div>
+    </section>
 
-      .form-box {
-        background-color: #fff;
-        padding: 20px;
-        border-radius: 20px;
-        box-shadow: 0 0 30px rgb(0, 0, 0, 0.5);
-        text-align: center;
-      }
+    <section class="footer" id="Contact-Info">
+        <div class="foot">
+                <div class="numbers">
+                    <h2 class="foothead">Contact Us</h2>
+                    <h4>The helplines below are available 24/7</h4>
+                    <p><a href="#">+2349127576573</a></p>
+                    <p><a href="#">+2349127576573</a></p>
+                    <p><a href="#">+2349127576573</a></p>
+                    <p><a href="#">+2349127576573</a></p>
+                    <p><a href="#">+2349127576573</a></p>
+                </div>
 
-      .form-box h2 {
-        margin-bottom: 20px;
-      }
+                <div class="address">
+                    <h2 class="foothead">Address</h2> 
+                    <h4>Visit us at our centres closest to you</h4>
+                    <p>Plot No. 12 Afrima Katana Road, Benin City, <br>Edo, Nigeria </p>
+                    <p>12A MainFrame Ijebu Street, Gbagada Phase 1 <br>Gbagada, Lagos, Nigeria</p>
+                    <p>Plot No. 25A Richard Kali Road, Wuse Zone 2<br>Abuja, Nigeria </p>
+                    <p>18 Ahmaadu Abdul Street, Lekki Phase 1, Garji <br> Lagos, Nigeria</p>
+                </div>
 
-      .input-box {
-        margin-bottom: 20px;
-        text-align: left;
-      }
-
-      .input-box input {
-        width: 100%;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        box-sizing: border-box;
-      }
-
-      .btn {
-        background-color: #333;
-        color: #fff;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 5px;
-        cursor: pointer;
-      }
-
-      .btn:hover {
-        background-color: #555;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>Student Dues Payment</h1>
-    </header>
-
-    <div class="wrapper">
-      <div class="form-box login">
-        <h2>Login</h2>
-        <form id="loginForm">
-          <div class="input-box">
-            <input type="text" id="student_name" name="student_name" required />
-            <label for="student_name">Student Name</label>
-          </div>
-          <div class="input-box">
-            <input type="text" id="student_id" name="student_id" required />
-            <label for="student_id">Student ID</label>
-          </div>
-          <div class="input-box">
-            <input
-              type="number"
-              id="dues_amount"
-              name="dues_amount"
-              min="0"
-              required
-            />
-            <label for="dues_amount">Dues Amount</label>
-          </div>
-          <button type="submit" class="btn">Proceed to Payment</button>
-        </form>
-      </div>
-
-      <div class="form-box card-details" style="display: none">
-        <h2>Card Details</h2>
-        <form id="cardDetailsForm">
-          <div class="input-box">
-            <input type="text" id="card_number" name="card_number" required />
-            <label for="card_number">Card Number</label>
-          </div>
-          <div class="input-box">
-            <input type="text" id="expiry_date" name="expiry_date" required />
-            <label for="expiry_date">Expiry Date</label>
-          </div>
-          <div class="input-box">
-            <input type="text" id="cvv" name="cvv" required />
-            <label for="cvv">CVV</label>
-          </div>
-          <button type="submit" class="btn">Pay Dues</button>
-        </form>
-      </div>
-    </div>
-
-    <script>
-      document
-        .getElementById("loginForm")
-        .addEventListener("submit", function (event) {
-          event.preventDefault(); // Prevent the default form submission
-
-          // Hide login form and show card details form
-          document.querySelector(".form-box.login").style.display = "none";
-          document.querySelector(".form-box.card-details").style.display =
-            "block";
-        });
-
-      document
-        .getElementById("cardDetailsForm")
-        .addEventListener("submit", function (event) {
-          event.preventDefault(); // Prevent the default form submission
-
-          // Get form values
-          var cardNumber = document.getElementById("card_number").value;
-          var expiryDate = document.getElementById("expiry_date").value;
-          var cvv = document.getElementById("cvv").value;
-
-          // Perform validation (you can add more validation as needed)
-          if (
-            cardNumber.trim() === "" ||
-            expiryDate.trim() === "" ||
-            cvv.trim() === ""
-          ) {
-            alert("Please fill in all card details.");
-            return;
-          }
-
-          // Submit the form data (replace this with your actual submission logic)
-          // For demonstration purposes, we'll just log the card details to the console
-          console.log("Card Number:", cardNumber);
-          console.log("Expiry Date:", expiryDate);
-          console.log("CVV:", cvv);
-
-          // Optionally, you can redirect the user to a payment page here
-          // window.location.href = "payment_page.html";
-        });
-    </script>
-  </body>
+                <div class="social-media">
+                    <h2 class="foothead">Social Media</h2>
+                    <h4>Visit our social media platforms</h4>
+                    <p>Instagram:   @nacos_vuna</p>
+                    <p>X:   @nacos_veritas_uni</p>
+                    <p>Facebook:    @nacos_veritas</p>
+                </div>
+        </div>
+    </section>
+</body>
 </html>

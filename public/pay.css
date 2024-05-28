@@ -1,0 +1,118 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: lightgray;
+}
+
+.mainDiv{
+    height: 480px;
+    width: 480px;
+    top: 50%;
+    left: 50%; 
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: #4a5c6a;
+    color: black;
+    padding: 30px;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.header{
+    font-weight: bolder;
+    font-size: 30px;
+    padding: 15px;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+
+.usernameDiv{
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+}
+
+.username{
+    height: 40px;
+    width: 300px;
+    padding: 1rem;
+    border-radius: 30px;  
+}
+
+#last {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+#cvv, #exp {
+    display: block;
+    width: 130px;
+    margin: 0 15px;
+}
+#card-type {
+    height: 40px;
+    width: 300px;
+    padding: 0.7rem;
+    border-radius: 30px;
+    color: #11212d;
+    margin: auto;
+    
+}
+input::placeholder{
+    color: #11212d;
+}
+
+.payDiv{
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+}
+
+#pay{
+    height: 40px;
+    width: 300px;
+    padding: 1rem;
+    border-radius: 30px;
+}
+
+#button{
+    width: 300px;
+    height: 35px;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    background-color: #11212d; 
+}
+
+.loginbtn{
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+}
+
+#fp{
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+
+#su{
+    color: white;
+    font-size: 12px;
+    padding-top: 5rem;
+}
+
+p a{
+    color: white;
+}
